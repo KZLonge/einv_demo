@@ -1,0 +1,1 @@
+CLASS zbp_einv_r_root_document DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zeinv_r_root_document.
