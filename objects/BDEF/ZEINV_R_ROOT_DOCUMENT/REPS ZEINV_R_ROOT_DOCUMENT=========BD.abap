@@ -12,5 +12,8 @@ authorization master ( instance )
   delete;
   field ( readonly ) Companycode, Fiscalyear, Accountingdocument;
 
-  action submitInvoice;
+
+  action submitInvoice result[1] $self;
+  static action extractInvoice;
+  event documentCreation parameter ZEINV_DOCUMENT_EVENT;
 }

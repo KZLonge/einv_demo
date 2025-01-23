@@ -53,7 +53,19 @@
           ).
           COMMIT WORK.
         ENDIF.
+      ELSE.
+        me->create_message_log(
+          im_message = 'No Invoice extracted'
+          im_status  = 'S'
+        ).
+        COMMIT WORK.
       ENDIF.
+    ELSE.
+      me->create_message_log(
+            im_message = 'No Valid Extraction Rules'
+            im_status  = 'E'
+          ).
+      COMMIT WORK.
     ENDIF.
 
   ENDMETHOD.

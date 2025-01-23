@@ -9,7 +9,7 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@Metadata.allowExtensions: true\r\n@EndUserText.label: '###GENERATED Core Data Service Entity'\r\n@AccessControl.authorizationCheck: #CHECK\r\ndefine root view entity ZC_EINV_RULE\r\n  provider contract TRANSACTIONAL_QUERY\r\n  as projection on ZR_EINV_RULE\r\n{\r\n  key Companycode,\r\n  key Accountingdocumenttype,\r\n  Validfromdate,\r\n  Validtodate,\r\n  Locallastchange,\r\n  Lastchange,\r\n  Createdby,\r\n  Changedby\r\n  \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZR_EINV_RULE\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@Metadata.allowExtensions: true\r\n@EndUserText.label: '###GENERATED Core Data Service Entity'\r\n@AccessControl.authorizationCheck: #CHECK\r\ndefine root view entity ZC_EINV_RULE\r\n  provider contract transactional_query\r\n  as projection on ZR_EINV_RULE\r\n{\r\n  @Consumption.valueHelpDefinition: [{ entity: { name: 'ZC_EINV_COMPANY_CODE', element: 'CompanyCode' } }]\r\n  key Companycode,\r\n  @Consumption.valueHelpDefinition: [{ entity: { name: 'I_AccountingDocumentType', element: 'AccountingDocumentType' } }]\r\n  key Accountingdocumenttype,\r\n  Validfromdate,\r\n  Validtodate,\r\n  Locallastchange,\r\n  Lastchange,\r\n  Createdby,\r\n  Changedby\r\n  \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZR_EINV_RULE\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
     "CHGFLAG":"",
@@ -48,6 +48,62 @@
   "table":"DDFIELDANNO",
   "data":
   [
+   {
+    "STRUCOBJN":"ZC_EINV_RULE",
+    "LFIELDNAME":"ACCOUNTINGDOCUMENTTYPE",
+    "NAME":"CONSUMPTION",
+    "POSITION":7,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_RULE",
+    "LFIELDNAME":"ACCOUNTINGDOCUMENTTYPE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY",
+    "POSITION":8,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_RULE",
+    "LFIELDNAME":"ACCOUNTINGDOCUMENTTYPE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.ELEMENT",
+    "POSITION":10,
+    "VALUE":"'AccountingDocumentType'"
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_RULE",
+    "LFIELDNAME":"ACCOUNTINGDOCUMENTTYPE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.NAME",
+    "POSITION":9,
+    "VALUE":"'I_AccountingDocumentType'"
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_RULE",
+    "LFIELDNAME":"COMPANYCODE",
+    "NAME":"CONSUMPTION",
+    "POSITION":3,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_RULE",
+    "LFIELDNAME":"COMPANYCODE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY",
+    "POSITION":4,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_RULE",
+    "LFIELDNAME":"COMPANYCODE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.ELEMENT",
+    "POSITION":6,
+    "VALUE":"'CompanyCode'"
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_RULE",
+    "LFIELDNAME":"COMPANYCODE",
+    "NAME":"CONSUMPTION.VALUEHELPDEFINITION$1$.ENTITY.NAME",
+    "POSITION":5,
+    "VALUE":"'ZC_EINV_COMPANY_CODE'"
+   },
    {
     "STRUCOBJN":"ZC_EINV_RULE",
     "LFIELDNAME":"MANDT",

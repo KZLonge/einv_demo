@@ -9,10 +9,10 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@Metadata.allowExtensions: true\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@Endusertext: {\r\n  Label: '###GENERATED Core Data Service Entity'\r\n}\r\n@AccessControl.authorizationCheck: #CHECK\r\ndefine root view entity ZC_EINV_R_ROOT_DOCUMENT\r\n  provider contract TRANSACTIONAL_QUERY\r\n  as projection on ZEINV_R_ROOT_DOCUMENT\r\n{\r\n  @Endusertext: {\r\n    Quickinfo: 'Company Code'\r\n  }\r\n  key Companycode,\r\n  @Endusertext: {\r\n    Quickinfo: 'Document Number of an Accounting Document'\r\n  }\r\n  key Fiscalyear,\r\n  @Endusertext: {\r\n    Quickinfo: 'Document Number of an Accounting Document'\r\n  }\r\n  key Accountingdocument,\r\n  @Endusertext: {\r\n    Quickinfo: 'Text (100 characters)'\r\n  }\r\n  Status,\r\n  @Endusertext: {\r\n    Quickinfo: 'Document Type'\r\n  }\r\n  Accountingdocumenttype,\r\n  @Endusertext: {\r\n    Quickinfo: 'Document Date in Document'\r\n  }\r\n  Documentdate,\r\n  @Endusertext: {\r\n    Quickinfo: 'Posting Date in the Document'\r\n  }\r\n  Postingdate,\r\n  @Endusertext: {\r\n    Quickinfo: 'User Name'\r\n  }\r\n  Accountingdoccreatedbyuser,\r\n  @Endusertext: {\r\n    Quickinfo: 'Text (100 characters)'\r\n  }\r\n  Uuid,\r\n  @Endusertext: {\r\n    Quickinfo: 'Local Instance Last Change Date Time'\r\n  }\r\n  @Semantics: {\r\n    Systemdatetime.Localinstancelastchangedat: true\r\n  }\r\n  Locallastchange,\r\n  @Endusertext: {\r\n    Quickinfo: 'Last Change Date Time'\r\n  }\r\n  @Semantics: {\r\n    Systemdatetime.Lastchangedat: true\r\n  }\r\n  Lastchange,\r\n  @Endusertext: {\r\n    Quickinfo: 'Created By User'\r\n  }\r\n  @Semantics: {\r\n    User.Createdby: true\r\n  }\r\n  Createdby,\r\n  @Endusertext: {\r\n    Quickinfo: 'Local Instance Last Changed By User'\r\n  }\r\n  @Semantics: {\r\n    User.Localinstancelastchangedby: true\r\n  }\r\n  Changedby\r\n  \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZEINV_R_ROOT_DOCUMENT\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@Metadata.allowExtensions: true\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@EndUserText: {\r\n  label: '###GENERATED Core Data Service Entity'\r\n}\r\n@AccessControl.authorizationCheck: #CHECK\r\ndefine root view entity ZC_EINV_R_ROOT_DOCUMENT\r\n  provider contract transactional_query\r\n  as projection on ZEINV_R_ROOT_DOCUMENT\r\n{\r\n  @EndUserText: {\r\n    quickInfo: 'Company Code'\r\n  }\r\n  key Companycode,\r\n  @EndUserText: {\r\n    quickInfo: 'Document Number of an Accounting Document'\r\n  }\r\n  key Fiscalyear,\r\n  @EndUserText: {\r\n    quickInfo: 'Document Number of an Accounting Document'\r\n  }\r\n  key Accountingdocument,\r\n  @EndUserText: {\r\n    quickInfo: 'Text (100 characters)'\r\n  }\r\n  Criticality,\r\n  @EndUserText: {\r\n    quickInfo: 'Criticality'\r\n  }\r\n  Status,\r\n  @EndUserText: {\r\n    quickInfo: 'Document Type'\r\n  }\r\n  Accountingdocumenttype,\r\n  @EndUserText: {\r\n    quickInfo: 'Document Date in Document'\r\n  }\r\n  Documentdate,\r\n  @EndUserText: {\r\n    quickInfo: 'Posting Date in the Document'\r\n  }\r\n  Postingdate,\r\n  @EndUserText: {\r\n    quickInfo: 'User Name'\r\n  }\r\n  Accountingdoccreatedbyuser,\r\n  @EndUserText: {\r\n    quickInfo: 'Text (100 characters)'\r\n  }\r\n  Uuid,\r\n  @EndUserText: {\r\n    quickInfo: 'Local Instance Last Change Date Time'\r\n  }\r\n  @Semantics: {\r\n    systemDateTime.localInstanceLastChangedAt: true\r\n  }\r\n  Locallastchange,\r\n  @EndUserText: {\r\n    quickInfo: 'Last Change Date Time'\r\n  }\r\n  @Semantics: {\r\n    systemDateTime.lastChangedAt: true\r\n  }\r\n  Lastchange,\r\n  @EndUserText: {\r\n    quickInfo: 'Created By User'\r\n  }\r\n  @Semantics: {\r\n    user.createdBy: true\r\n  }\r\n  Createdby,\r\n  @EndUserText: {\r\n    quickInfo: 'Local Instance Last Changed By User'\r\n  }\r\n  @Semantics: {\r\n    user.localInstanceLastChangedBy: true\r\n  }\r\n  Changedby\r\n  \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZEINV_R_ROOT_DOCUMENT\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
-    "CHGFLAG":"",
+    "CHGFLAG":"54",
     "SOURCE_TYPE":"P",
     "SOURCE_ORIGIN":"0",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -114,6 +114,18 @@
     "NODENAME":".NODE1",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
+    "FIELDNAME":"CRITICALITY",
+    "DEPTH":0,
+    "DDTEXT":"",
+    "FIELDLABEL":"",
+    "QUICKINFO":"Text (100 characters)"
+   },
+   {
+    "DDLNAME":"ZC_EINV_R_ROOT_DOCUMENT",
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "NODENAME":".NODE1",
+    "DDLANGUAGE":"E",
+    "AS4LOCAL":"N",
     "FIELDNAME":"DOCUMENTDATE",
     "DEPTH":0,
     "DDTEXT":"",
@@ -178,7 +190,7 @@
     "DEPTH":0,
     "DDTEXT":"",
     "FIELDLABEL":"",
-    "QUICKINFO":"Text (100 characters)"
+    "QUICKINFO":"Criticality"
    },
    {
     "DDLNAME":"ZC_EINV_R_ROOT_DOCUMENT",
@@ -214,14 +226,14 @@
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"ACCOUNTINGDOCCREATEDBYUSER",
     "NAME":"ENDUSERTEXT",
-    "POSITION":17,
+    "POSITION":19,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"ACCOUNTINGDOCCREATEDBYUSER",
     "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":18,
+    "POSITION":20,
     "VALUE":"'User Name'"
    },
    {
@@ -242,49 +254,49 @@
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"ACCOUNTINGDOCUMENTTYPE",
     "NAME":"ENDUSERTEXT",
-    "POSITION":11,
+    "POSITION":13,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"ACCOUNTINGDOCUMENTTYPE",
     "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":12,
+    "POSITION":14,
     "VALUE":"'Document Type'"
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CHANGEDBY",
     "NAME":"ENDUSERTEXT",
-    "POSITION":36,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
-    "LFIELDNAME":"CHANGEDBY",
-    "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":37,
-    "VALUE":"'Local Instance Last Changed By User'"
-   },
-   {
-    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
-    "LFIELDNAME":"CHANGEDBY",
-    "NAME":"SEMANTICS",
     "POSITION":38,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CHANGEDBY",
-    "NAME":"SEMANTICS.USER",
+    "NAME":"ENDUSERTEXT.QUICKINFO",
     "POSITION":39,
+    "VALUE":"'Local Instance Last Changed By User'"
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"CHANGEDBY",
+    "NAME":"SEMANTICS",
+    "POSITION":40,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"CHANGEDBY",
+    "NAME":"SEMANTICS.USER",
+    "POSITION":41,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CHANGEDBY",
     "NAME":"SEMANTICS.USER.LOCALINSTANCELASTCHANGEDBY",
-    "POSITION":40,
+    "POSITION":42,
     "VALUE":"true"
    },
    {
@@ -305,49 +317,63 @@
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CREATEDBY",
     "NAME":"ENDUSERTEXT",
-    "POSITION":31,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
-    "LFIELDNAME":"CREATEDBY",
-    "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":32,
-    "VALUE":"'Created By User'"
-   },
-   {
-    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
-    "LFIELDNAME":"CREATEDBY",
-    "NAME":"SEMANTICS",
     "POSITION":33,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CREATEDBY",
-    "NAME":"SEMANTICS.USER",
+    "NAME":"ENDUSERTEXT.QUICKINFO",
     "POSITION":34,
+    "VALUE":"'Created By User'"
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"CREATEDBY",
+    "NAME":"SEMANTICS",
+    "POSITION":35,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"CREATEDBY",
+    "NAME":"SEMANTICS.USER",
+    "POSITION":36,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CREATEDBY",
     "NAME":"SEMANTICS.USER.CREATEDBY",
-    "POSITION":35,
+    "POSITION":37,
     "VALUE":"true"
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"CRITICALITY",
+    "NAME":"ENDUSERTEXT",
+    "POSITION":9,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"CRITICALITY",
+    "NAME":"ENDUSERTEXT.QUICKINFO",
+    "POSITION":10,
+    "VALUE":"'Text (100 characters)'"
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"DOCUMENTDATE",
     "NAME":"ENDUSERTEXT",
-    "POSITION":13,
+    "POSITION":15,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"DOCUMENTDATE",
     "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":14,
+    "POSITION":16,
     "VALUE":"'Document Date in Document'"
    },
    {
@@ -368,70 +394,70 @@
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LASTCHANGE",
     "NAME":"ENDUSERTEXT",
-    "POSITION":26,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
-    "LFIELDNAME":"LASTCHANGE",
-    "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":27,
-    "VALUE":"'Last Change Date Time'"
-   },
-   {
-    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
-    "LFIELDNAME":"LASTCHANGE",
-    "NAME":"SEMANTICS",
     "POSITION":28,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LASTCHANGE",
-    "NAME":"SEMANTICS.SYSTEMDATETIME",
+    "NAME":"ENDUSERTEXT.QUICKINFO",
     "POSITION":29,
+    "VALUE":"'Last Change Date Time'"
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"LASTCHANGE",
+    "NAME":"SEMANTICS",
+    "POSITION":30,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"LASTCHANGE",
+    "NAME":"SEMANTICS.SYSTEMDATETIME",
+    "POSITION":31,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LASTCHANGE",
     "NAME":"SEMANTICS.SYSTEMDATETIME.LASTCHANGEDAT",
-    "POSITION":30,
+    "POSITION":32,
     "VALUE":"true"
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LOCALLASTCHANGE",
     "NAME":"ENDUSERTEXT",
-    "POSITION":21,
-    "VALUE":""
-   },
-   {
-    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
-    "LFIELDNAME":"LOCALLASTCHANGE",
-    "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":22,
-    "VALUE":"'Local Instance Last Change Date Time'"
-   },
-   {
-    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
-    "LFIELDNAME":"LOCALLASTCHANGE",
-    "NAME":"SEMANTICS",
     "POSITION":23,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LOCALLASTCHANGE",
-    "NAME":"SEMANTICS.SYSTEMDATETIME",
+    "NAME":"ENDUSERTEXT.QUICKINFO",
     "POSITION":24,
+    "VALUE":"'Local Instance Last Change Date Time'"
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"LOCALLASTCHANGE",
+    "NAME":"SEMANTICS",
+    "POSITION":25,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"LOCALLASTCHANGE",
+    "NAME":"SEMANTICS.SYSTEMDATETIME",
+    "POSITION":26,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LOCALLASTCHANGE",
     "NAME":"SEMANTICS.SYSTEMDATETIME.LOCALINSTANCELASTCHANGEDAT",
-    "POSITION":25,
+    "POSITION":27,
     "VALUE":"true"
    },
    {
@@ -452,42 +478,42 @@
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"POSTINGDATE",
     "NAME":"ENDUSERTEXT",
-    "POSITION":15,
+    "POSITION":17,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"POSTINGDATE",
     "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":16,
+    "POSITION":18,
     "VALUE":"'Posting Date in the Document'"
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"STATUS",
     "NAME":"ENDUSERTEXT",
-    "POSITION":9,
+    "POSITION":11,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"STATUS",
     "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":10,
-    "VALUE":"'Text (100 characters)'"
+    "POSITION":12,
+    "VALUE":"'Criticality'"
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"UUID",
     "NAME":"ENDUSERTEXT",
-    "POSITION":19,
+    "POSITION":21,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZC_EINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"UUID",
     "NAME":"ENDUSERTEXT.QUICKINFO",
-    "POSITION":20,
+    "POSITION":22,
     "VALUE":"'Text (100 characters)'"
    }
   ]

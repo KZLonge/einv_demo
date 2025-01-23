@@ -8,4 +8,5 @@ define behavior for ZEINV_ROOT_DOCUMENT alias eInvDocument
   use delete;
 
   use action submitInvoice;
+  use action extractInvoice;
 }

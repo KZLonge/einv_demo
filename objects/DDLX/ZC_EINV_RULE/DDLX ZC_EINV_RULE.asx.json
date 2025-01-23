@@ -8,8 +8,8 @@
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
     "CHANGED_ON":"2025-01-14",
-    "CHANGED_AT":"12:52:52",
-    "UUID":"A775ED229B6F1EEFB4CECEEC2DAA4570",
+    "CHANGED_AT":"16:38:50",
+    "UUID":"A775ED229B6F1EEFB4D2C0FAA5DC4571",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]
@@ -34,7 +34,7 @@
     "DDLXNAME":"ZC_EINV_RULE",
     "VERSION":"A",
     "UUID":"",
-    "SOURCE":"@Metadata.layer: #CORE\r\n@UI.headerInfo.title.type: #STANDARD\r\n@UI.headerInfo.title.value: 'Companycode'\r\n@UI.headerInfo.description.type: #STANDARD\r\n@UI.headerInfo.description.value: 'Companycode'\r\nannotate view ZC_EINV_RULE with\r\n{\r\n  @UI.facet: [ {\r\n    label: 'General Information', \r\n    id: 'GeneralInfo', \r\n    purpose: #STANDARD, \r\n    position: 10 , \r\n    type: #IDENTIFICATION_REFERENCE\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 10 , \r\n    label: 'Buchungskreis'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 10 , \r\n    label: 'Buchungskreis'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 10 \r\n  } ]\r\n  Companycode;\r\n  \r\n  @UI.identification: [ {\r\n    position: 20 , \r\n    label: 'Belegart'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 20 , \r\n    label: 'Belegart'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 20 \r\n  } ]\r\n  Accountingdocumenttype;\r\n  \r\n  @UI.identification: [ {\r\n    position: 30 , \r\n    label: 'Buchungsdatum'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 30 , \r\n    label: 'Buchungsdatum'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 30 \r\n  } ]\r\n  Validfromdate;\r\n  \r\n  @UI.identification: [ {\r\n    position: 40 , \r\n    label: 'Buchungsdatum'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 40 , \r\n    label: 'Buchungsdatum'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 40 \r\n  } ]\r\n  Validtodate;\r\n  \r\n  @UI.identification: [ {\r\n    position: 50 , \r\n    label: 'Changed On'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 50 , \r\n    label: 'Changed On'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 50 \r\n  } ]\r\n  Locallastchange;\r\n  \r\n  @UI.identification: [ {\r\n    position: 60 , \r\n    label: 'Changed On'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 60 , \r\n    label: 'Changed On'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 60 \r\n  } ]\r\n  Lastchange;\r\n  \r\n  @UI.identification: [ {\r\n    position: 70 , \r\n    label: 'Created By'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 70 , \r\n    label: 'Created By'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 70 \r\n  } ]\r\n  Createdby;\r\n  \r\n  @UI.identification: [ {\r\n    position: 80 , \r\n    label: 'Changed By'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 80 , \r\n    label: 'Changed By'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 80 \r\n  } ]\r\n  Changedby;\r\n}"
+    "SOURCE":"@Metadata.layer: #CORE\r\n@UI.headerInfo.title.type: #STANDARD\r\n@UI.headerInfo.title.value: 'Companycode'\r\n@UI.headerInfo.description.type: #STANDARD\r\n@UI.headerInfo.description.value: 'Companycode'\r\nannotate view ZC_EINV_RULE with\r\n{\r\n  @UI.facet: [ {\r\n    label: 'General Information', \r\n    id: 'GeneralInfo', \r\n    purpose: #STANDARD, \r\n    position: 10 , \r\n    type: #IDENTIFICATION_REFERENCE\r\n  } ]\r\n  @UI.identification: [ {\r\n    position: 10 , \r\n    label: 'Company Code'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 10 , \r\n    label: 'Company Code'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 10 \r\n  } ]\r\n  Companycode;\r\n  \r\n  @UI.identification: [ {\r\n    position: 20 , \r\n    label: 'Document Type'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 20 , \r\n    label: 'Document Type'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 20 \r\n  } ]\r\n  Accountingdocumenttype;\r\n  \r\n  @UI.identification: [ {\r\n    position: 30 , \r\n    label: 'Valid From Date'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 30 , \r\n    label: 'Valid From Date'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 30 \r\n  } ]\r\n  Validfromdate;\r\n  \r\n  @UI.identification: [ {\r\n    position: 40 , \r\n    label: 'Valid To Date'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 40 , \r\n    label: 'Valid To Date'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 40 \r\n  } ]\r\n  Validtodate;\r\n  \r\n  @UI.identification: [ {\r\n    position: 50 , \r\n    label: 'Changed On'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 50 , \r\n    label: 'Changed On'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 50 \r\n  } ]\r\n  Locallastchange;\r\n  \r\n  @UI.identification: [ {\r\n    position: 60 , \r\n    label: 'Changed On'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 60 , \r\n    label: 'Changed On'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 60 \r\n  } ]\r\n  Lastchange;\r\n  \r\n  @UI.identification: [ {\r\n    position: 70 , \r\n    label: 'Created By'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 70 , \r\n    label: 'Created By'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 70 \r\n  } ]\r\n  Createdby;\r\n  \r\n  @UI.identification: [ {\r\n    position: 80 , \r\n    label: 'Changed By'\r\n  } ]\r\n  @UI.lineItem: [ {\r\n    position: 80 , \r\n    label: 'Changed By'\r\n  } ]\r\n  @UI.selectionField: [ {\r\n    position: 80 \r\n  } ]\r\n  Changedby;\r\n}"
    }
   ]
  },
@@ -75,7 +75,7 @@
     "ELEMENT":"ACCOUNTINGDOCUMENTTYPE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Belegart'"
+    "VALUE":"'Document Type'"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -89,7 +89,7 @@
     "ELEMENT":"ACCOUNTINGDOCUMENTTYPE",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Belegart'"
+    "VALUE":"'Document Type'"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -180,7 +180,7 @@
     "ELEMENT":"COMPANYCODE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Buchungskreis'"
+    "VALUE":"'Company Code'"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -194,7 +194,7 @@
     "ELEMENT":"COMPANYCODE",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Buchungskreis'"
+    "VALUE":"'Company Code'"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -320,7 +320,7 @@
     "ELEMENT":"VALIDFROMDATE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Buchungsdatum'"
+    "VALUE":"'Valid From Date'"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -334,7 +334,7 @@
     "ELEMENT":"VALIDFROMDATE",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Buchungsdatum'"
+    "VALUE":"'Valid From Date'"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -355,7 +355,7 @@
     "ELEMENT":"VALIDTODATE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Buchungsdatum'"
+    "VALUE":"'Valid To Date'"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -369,7 +369,7 @@
     "ELEMENT":"VALIDTODATE",
     "NAME":"UI.LINEITEM$1$.LABEL",
     "ELEMENT_TYPE":"S",
-    "VALUE":"'Buchungsdatum'"
+    "VALUE":"'Valid To Date'"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -396,14 +396,14 @@
     "DDLANGUAGE":"E",
     "ELEMENT":"ACCOUNTINGDOCUMENTTYPE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "TEXT":"Belegart"
+    "TEXT":"Document Type"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
     "DDLANGUAGE":"E",
     "ELEMENT":"ACCOUNTINGDOCUMENTTYPE",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Belegart"
+    "TEXT":"Document Type"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -431,14 +431,14 @@
     "DDLANGUAGE":"E",
     "ELEMENT":"COMPANYCODE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "TEXT":"Buchungskreis"
+    "TEXT":"Company Code"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
     "DDLANGUAGE":"E",
     "ELEMENT":"COMPANYCODE",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Buchungskreis"
+    "TEXT":"Company Code"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
@@ -487,28 +487,28 @@
     "DDLANGUAGE":"E",
     "ELEMENT":"VALIDFROMDATE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "TEXT":"Buchungsdatum"
+    "TEXT":"Valid From Date"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
     "DDLANGUAGE":"E",
     "ELEMENT":"VALIDFROMDATE",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Buchungsdatum"
+    "TEXT":"Valid From Date"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
     "DDLANGUAGE":"E",
     "ELEMENT":"VALIDTODATE",
     "NAME":"UI.IDENTIFICATION$1$.LABEL",
-    "TEXT":"Buchungsdatum"
+    "TEXT":"Valid To Date"
    },
    {
     "DDLXNAME":"ZC_EINV_RULE",
     "DDLANGUAGE":"E",
     "ELEMENT":"VALIDTODATE",
     "NAME":"UI.LINEITEM$1$.LABEL",
-    "TEXT":"Buchungsdatum"
+    "TEXT":"Valid To Date"
    }
   ]
  },
@@ -521,8 +521,8 @@
     "EXTENDED_ARTIFACT":"ZC_EINV_RULE",
     "VARIANT":"",
     "LAYER":1500,
-    "DT_UUID":"A775ED229B6F1EEFB4CECEEC2DAA4570",
-    "RT_HASH":"869057F23FA62AF785475B4F54E93E18CB7F8A53",
+    "DT_UUID":"A775ED229B6F1EEFB4D2C0FAA5DC4571",
+    "RT_HASH":"A83DD9D05A93C66A6A2179FC885C9D36BC16C0DE",
     "GEN_VERSION":"0",
     "TYPE":"0"
    }

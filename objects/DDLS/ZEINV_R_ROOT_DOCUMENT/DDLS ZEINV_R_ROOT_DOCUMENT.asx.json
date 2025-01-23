@@ -9,7 +9,7 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AccessControl.authorizationCheck: #CHECK\r\n@Metadata.allowExtensions: true\r\n@EndUserText.label: '###GENERATED Core Data Service Entity'\r\ndefine root view entity ZEINV_R_ROOT_DOCUMENT\r\n  as select from zeinv_document as eInvoice\r\n{\r\n  key companycode as Companycode,\r\n  key fiscalyear as Fiscalyear,\r\n  key accountingdocument as Accountingdocument,\r\n  status as Status,\r\n  accountingdocumenttype as Accountingdocumenttype,\r\n  documentdate as Documentdate,\r\n  postingdate as Postingdate,\r\n  accountingdoccreatedbyuser as Accountingdoccreatedbyuser,\r\n  uuid as Uuid,\r\n  @Semantics.systemDateTime.localInstanceLastChangedAt: true\r\n  locallastchange as Locallastchange,\r\n  @Semantics.systemDateTime.lastChangedAt: true\r\n  lastchange as Lastchange,\r\n  @Semantics.user.createdBy: true\r\n  createdby as Createdby,\r\n  @Semantics.user.localInstanceLastChangedBy: true\r\n  changedby as Changedby\r\n  \r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZEINV_DOCUMENT\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AccessControl.authorizationCheck: #CHECK\r\n@Metadata.allowExtensions: true\r\n@EndUserText.label: '###GENERATED Core Data Service Entity'\r\ndefine root view entity ZEINV_R_ROOT_DOCUMENT\r\n  as select from zeinv_document as eInvoice\r\n{\r\n    \r\n//  @UI.facet: [{ purpose: #STANDARD }]\r\n    \r\n  key companycode                as Companycode,\r\n  key fiscalyear                 as Fiscalyear,\r\n  key accountingdocument         as Accountingdocument,\r\n      case status\r\n      when 'Ready' then 2 --Yellow\r\n      when 'Accepted' then 3 --Green\r\n      when 'Valid' then 3 --Green\r\n      when 'Rejected' then 1 --Red\r\n      when 'Invalid' then 1 --Red\r\n      when 'Error' then 1 --Red\r\n      else 0\r\n      end                        as Criticality,\r\n      @ObjectModel.text.element: ['Status']\r\n      status                     as Status,\r\n      accountingdocumenttype     as Accountingdocumenttype,\r\n      documentdate               as Documentdate,\r\n      postingdate                as Postingdate,\r\n      accountingdoccreatedbyuser as Accountingdoccreatedbyuser,\r\n      uuid                       as Uuid,\r\n      @Semantics.systemDateTime.localInstanceLastChangedAt: true\r\n      locallastchange            as Locallastchange,\r\n      @Semantics.systemDateTime.lastChangedAt: true\r\n      lastchange                 as Lastchange,\r\n      @Semantics.user.createdBy: true\r\n      createdby                  as Createdby,\r\n      @Semantics.user.localInstanceLastChangedBy: true\r\n      changedby                  as Changedby\r\n\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"ZEINV_DOCUMENT\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
     "CHGFLAG":"",
@@ -52,56 +52,56 @@
     "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CHANGEDBY",
     "NAME":"SEMANTICS",
-    "POSITION":9,
+    "POSITION":11,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CHANGEDBY",
     "NAME":"SEMANTICS.USER.LOCALINSTANCELASTCHANGEDBY",
-    "POSITION":10,
+    "POSITION":12,
     "VALUE":"true"
    },
    {
     "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CREATEDBY",
     "NAME":"SEMANTICS",
-    "POSITION":7,
+    "POSITION":9,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"CREATEDBY",
     "NAME":"SEMANTICS.USER.CREATEDBY",
-    "POSITION":8,
+    "POSITION":10,
     "VALUE":"true"
    },
    {
     "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LASTCHANGE",
     "NAME":"SEMANTICS",
-    "POSITION":5,
+    "POSITION":7,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LASTCHANGE",
     "NAME":"SEMANTICS.SYSTEMDATETIME.LASTCHANGEDAT",
-    "POSITION":6,
+    "POSITION":8,
     "VALUE":"true"
    },
    {
     "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LOCALLASTCHANGE",
     "NAME":"SEMANTICS",
-    "POSITION":3,
+    "POSITION":5,
     "VALUE":""
    },
    {
     "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
     "LFIELDNAME":"LOCALLASTCHANGE",
     "NAME":"SEMANTICS.SYSTEMDATETIME.LOCALINSTANCELASTCHANGEDAT",
-    "POSITION":4,
+    "POSITION":6,
     "VALUE":"true"
    },
    {
@@ -117,6 +117,20 @@
     "NAME":"ABAPCATALOG.INTERNAL.ISMANDT",
     "POSITION":2,
     "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"STATUS",
+    "NAME":"OBJECTMODEL",
+    "POSITION":3,
+    "VALUE":""
+   },
+   {
+    "STRUCOBJN":"ZEINV_R_ROOT_DOCUMENT",
+    "LFIELDNAME":"STATUS",
+    "NAME":"OBJECTMODEL.TEXT.ELEMENT$1$",
+    "POSITION":4,
+    "VALUE":"'Status'"
    }
   ]
  },
